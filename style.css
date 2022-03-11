@@ -1,0 +1,21 @@
+.for{
+    font-size:80px;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.numers{
+    line-height: normal;
+    font-size: 20px;
+    width:300px
+}
+.media{
+    font-family: fantasy;
+    font-size:17px;
+    color: brown;
+    background-color: aqua;
+}
+
