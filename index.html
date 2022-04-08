@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +7,39 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     <title>CadeAMedia</title>
 </head>
-<body>
-    <fomr class="for">
-        <label class="numers">
-            PRIMEIRO NÚMERO<br>
-            <input type="number" class="num1"><br>
-            SEGUNDO NÚMERO<br>
-            <input type="number" class="num2"><br>
-            TERCEIRO NÚMERO<br>
-            <input type="number" class="num3"><br>
-            QUARTO NÚMERO<br>
-            <input type="number" class="num4"><br>
-            <button onclick="media()" class="media">MEDIA</button>
-             O resultado é: <span></span>
-        
-        </label>
-    </fomr>
-    <script>
-        var n1 = document.querySelector('.num1')
-        var n2 = document.querySelector('.num2')
-        var n3 = document.querySelector('.num3')
-        var n4 = document.querySelector('.num4')
-        
-        var resultado = document.querySelector('span')
-
-        function media(){
-            resultado.innerHTML = (parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value) + parseFloat(n4.value))/4
-        }
-    </script>
+<body >
+    <div class="bd">
+        <fomr class="for">
+            <label class="numers">
+                PRIMEIRO NÚMERO<br>
+                <input type="number" class="num1"><br>
+                SEGUNDO NÚMERO<br>
+                <input type="number" class="num2"><br>
+                TERCEIRO NÚMERO<br>
+                <input type="number" class="num3"><br>
+                QUARTO NÚMERO<br>
+                <input type="number" class="num4"><br>
+                <button onclick="media()" class="media">MEDIA</button>
+                 O resultado é: <span class="resco"></span>
+                
+            
+            </label>
+        </fomr>
+        <script>
+            var n1 = document.querySelector('.num1')
+            var n2 = document.querySelector('.num2')
+            var n3 = document.querySelector('.num3')
+            var n4 = document.querySelector('.num4')
+            
+            var resultado = document.querySelector('span')
     
+            function media(){
+                resultado.innerHTML = (parseFloat(n1.value) + parseFloat(n2.value) + parseFloat(n3.value) + parseFloat(n4.value))/4
+            }
+        </script>
+    </div>
+    <footer class="logo">
+        <img src="robo-removebg-preview.png" alt="">
+    </footer>
 </body>
 </html>
